@@ -1,0 +1,37 @@
+from sqlalchemy import Column, Integer, String, Float
+from app.db.database import Base
+
+class PlayerStats(Base):
+    __tablename__ = "player_stats"
+
+    id = Column(Integer, primary_key=True, index=True)
+    player = Column(String)
+    team = Column(String)
+    pos = Column(String)
+    pts = Column(Float)
+    ast = Column(Float)
+    trb = Column(Float)
+    stl = Column(Float)
+    blk = Column(Float)
+    tov = Column(Float)
+    fg_pct = Column(Float)
+    threep_pct = Column(Float)
+    ft_pct = Column(Float)
+    per = Column(Float)
+    usg_pct = Column(Float)
+    bpm = Column(Float)
+    ts_pct = Column(Float)
+    threepar = Column(Float)
+    ftr = Column(Float)
+    orb = Column(Float)
+    drb = Column(Float)
+    orb_pct = Column(Float)
+    drb_pct = Column(Float)
+    trb_pct = Column(Float)
+    stl_pct = Column(Float)
+    blk_pct = Column(Float)
+    ows = Column(Float)
+    dws = Column(Float)
+    obpm = Column(Float)
+    dbpm = Column(Float)
+    assist_turnover_ratio = Column(Float)
